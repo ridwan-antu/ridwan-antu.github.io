@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Md. Ridwanul Islam Antu</title>
+  <meta name="description" content="Research by Md. Ridwanul Islam Antu: ceiling-mounted SCARA arm, ROS 2 digital twin, hyper-redundant manipulator, predictive digital twin for grid demand, and quadcopter propeller noise.">
+  <meta name="author" content="Md. Ridwanul Islam Antu">
+  <meta name="theme-color" content="#1f1f1e">
+  <meta property="og:title" content="Research | Md. Ridwanul Islam Antu">
+  <meta property="og:description" content="Research by Md. Ridwanul Islam Antu: ceiling-mounted SCARA arm, ROS 2 digital twin, hyper-redundant manipulator, predictive digital twin for grid demand, and quadcopter propeller noise.">
+  <meta property="og:type" content="website">
+  <!-- PLACEHOLDER: add <meta property="og:url"> and <link rel="canonical"> once the GitHub Pages URL is known -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="hazard" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar" aria-label="Main">
+        <a class="brand" href="index.html" aria-label="Antu, home">
+          <span class="monogram" aria-hidden="true">RA</span>
+          <span class="brand-name">Antu</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" aria-current="page">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <div class="container">
+        <h1>Research</h1>
+        <p>My work moves from building mechanisms, to modelling them, to simulating them as digital twins, and to using machine learning to predict how systems behave.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="map-title" style="border-top:0">
+      <div class="container">
+        <h2 class="section-title" id="map-title">How the work connects</h2>
+        <div class="flow" role="list" aria-label="Research map, from hardware to learning">
+          <div class="flow-node" role="listitem">
+            <span class="mono">Build</span>
+            <h3>Mechanical design &amp; fabrication</h3>
+            <ul><li>Mars rover subsystems</li><li>Ceiling-mounted SCARA prototype</li><li>Propeller test rig</li></ul>
+          </div>
+          <div class="flow-node" role="listitem">
+            <span class="mono">Model</span>
+            <h3>Kinematics &amp; analysis</h3>
+            <ul><li>DH model, forward/inverse kinematics</li><li>Jacobian &amp; singularities</li><li>CFD of propeller noise</li></ul>
+          </div>
+          <div class="flow-node" role="listitem">
+            <span class="mono">Simulate</span>
+            <h3>Digital twins</h3>
+            <ul><li>ROS 2 twin of the SCARA arm</li><li>8-DOF hyper-redundant arm in ROS 2</li></ul>
+          </div>
+          <div class="flow-node" role="listitem">
+            <span class="mono">Learn</span>
+            <h3>Machine learning</h3>
+            <ul><li>Predictive digital twin for grid demand</li><li>ML path-cost prediction for mobile robots</li></ul>
+          </div>
+        </div>
+        <p class="flow-goal"><span class="mono">Goal</span>Robots that sense, simulate and adapt</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="proj-title">
+      <div class="container">
+        <h2 class="section-title" id="proj-title">Research projects</h2>
+        <div class="grid grid-2">
+          <article class="card media-card">
+            <div class="media"><div class="media-placeholder" role="img" aria-label="Image placeholder"><span>[PLACEHOLDER: image of the 8-DOF arm]</span></div></div>
+            <div class="body">
+              <p class="date">Oct 2026 &ndash; Present</p>
+              <h3>Hyper-Redundant Oblique Swivel Joint Manipulator</h3>
+              <p class="meta">Supervisor: Dr. Md Sayem Hossain Bhuiyan</p><p>An 8-DOF hyper-redundant arm (base yaw plus seven oblique swivel joints, &beta;&nbsp;=&nbsp;22.5&deg;) designed in SolidWorks. I am building a ROS&nbsp;2 simulation framework (URDF/xacro, RViz) with Jacobian null-space inverse kinematics for reaching into confined spaces.</p>
+              <div class="card-foot">
+                <span class="status">Ongoing</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="card media-card">
+            <div class="media media--contain"><img src="assets/img/scara-cad.jpg" alt="SolidWorks CAD model of the ceiling-mounted SCARA arm with its overhead rail" width="960" height="720" loading="lazy" decoding="async"></div>
+            <div class="body">
+              <p class="date">Journal extension</p>
+              <h3>ROS&nbsp;2 Digital Twin and Kinematic Analysis of the SCARA Arm</h3>
+              <p>A ROS&nbsp;2 model built from the prototype CAD reproduces the analytical kinematics and Jacobian to machine precision over 2,640 test configurations. The analysis shows that all singularities lie on the workspace boundary, and a link-ratio optimisation gives 63% more oriented-grasp area (0.638 to 1.040&nbsp;m&sup2;).</p>
+              <div class="card-foot">
+                <span class="status">Manuscript in preparation</span>
+                <a class="link-mono" href="publications.html">Publication</a> <span class="placeholder">[PLACEHOLDER: code link]</span>
+              </div>
+            </div>
+          </article>
+          <article class="card media-card">
+            <div class="media"><div class="media-placeholder" role="img" aria-label="Image placeholder"><span>[PLACEHOLDER: forecasting / digital-twin figure]</span></div></div>
+            <div class="body">
+              <p class="date">Apr 2025 &ndash; Present</p>
+              <h3>ML-Enabled Predictive Digital Twin for Smart Grid Demand Forecasting in Bangladesh</h3>
+              <p class="meta">Supervisor: Dr. Md Sayem Hossain Bhuiyan</p><p>A forecasting pipeline on 10 years of hourly PGCB national demand data merged with multi-city weather records. I diagnosed a distribution-shift failure in tree-based models caused by sustained demand growth and resolved it with a trend-normalised target. SHAP quantifies how much demand history and weather each contribute. An offline scenario-simulation framework for grid decision support is in design.</p>
+              <div class="card-foot">
+                <span class="status">Ongoing &middot; MS thesis</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="card media-card">
+            <div class="media"><img src="assets/img/scara-prototype.jpg" alt="Belt-and-pulley drive on the aluminium plate of the SCARA arm prototype" width="960" height="720" loading="lazy" decoding="async"></div>
+            <div class="body">
+              <p class="date">Apr 2022 &ndash; Mar 2023</p>
+              <h3>Ceiling-Mounted Four-Axis SCARA Robotic Arm</h3>
+              <p class="meta">Integrated design project &middot; Supervisor: Shah Md. Ahasan Siddique</p><p>A SCARA arm hung from the ceiling, with horizontal rail travel and a vertical lift, so it leaves the floor free. Arduino-based control, belt-pulley transmission, and 3D-printed joints with aluminium/stainless-steel parts. A DH model and Python reachability analysis show a 110.4% planar workspace gain over an equivalent fixed-base SCARA.</p>
+              <div class="card-foot">
+                <span class="status">Completed &middot; paper accepted</span>
+                <a class="link-mono" href="publications.html">IEEE RAAICON 2026</a> <span class="placeholder">[PLACEHOLDER: DOI]</span>
+              </div>
+            </div>
+          </article>
+          <article class="card media-card">
+            <div class="media"><img src="assets/img/quadcopter-test.jpg" alt="Quadcopter with 3D-printed propellers mounted in a test setup" width="564" height="422" loading="lazy" decoding="async"></div>
+            <div class="body">
+              <p class="date">Apr 2023 &ndash; Mar 2024</p>
+              <h3>Minimising the Sound Signature of a Quadcopter Propeller</h3>
+              <p class="meta">Supervisor: Dr. Muammer Din Arif</p><p>Compared tri-toroidal and modified conventional propellers to reduce noise at comparable thrust. CFD in ANSYS Fluent with the Multiple Reference Frame (MRF) approach, validated experimentally on 3D-printed propellers. The modified conventional tri-blade showed the smallest simulation-to-experiment difference (17.25%).</p>
+              <div class="card-foot">
+                <span class="status">Completed &middot; BSc thesis</span>
+                
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p class="footer-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Dhaka, Bangladesh</p>
+      <ul class="social" aria-label="Links">
+        <li><a href="mailto:ridwanul.islam.antu.bd@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></a></li>
+        <li><a href="https://orcid.org/0009-0007-5962-3201" aria-label="ORCID profile" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-3.3 4.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM7.9 9.6h1.6v7.8H7.9V9.6Zm3.2 0h3.1c2.6 0 4.2 1.9 4.2 3.9 0 2.1-1.6 3.9-4.2 3.9h-3.1V9.6Zm1.6 1.4v5h1.4c1.8 0 2.7-1.2 2.7-2.5s-.9-2.5-2.7-2.5h-1.4Z"/></svg></a></li>
+        <!-- PLACEHOLDER: uncomment and add your URLs when ready
+        <li><a href="https://www.linkedin.com/in/YOUR-PROFILE" aria-label="LinkedIn" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5Z"/></svg></a></li>
+        <li><a href="https://github.com/YOUR-USERNAME" aria-label="GitHub" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></a></li>
+        <li><a href="https://scholar.google.com/citations?user=YOUR-ID" aria-label="Google Scholar" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9.5l4 2.4V16c0 2.2 3.1 4 7 4s7-1.8 7-4v-4.1l2-1.2V16h2V9.5L12 3Zm0 2.3 7.2 4.2L12 13.7 4.8 9.5 12 5.3Z"/></svg></a></li>
+        -->
+      </ul>
+      <p class="copyright">&copy; 2026 Md. Ridwanul Islam Antu</p>
+    </div>
+  </footer>
+</body>
+</html>
